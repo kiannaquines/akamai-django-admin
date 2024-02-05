@@ -11,8 +11,10 @@ document.querySelectorAll('.sidebar-item').forEach(item => {
         const Subparent = item.closest('.group')
         if(!Subparent.classList.contains('selected')){
             Subparent.classList.add('selected')
+            item.classList.add('active')
         }else{
             Subparent.classList.remove('selected')
+            item.classList.remove('active')
         }
     });
 });
@@ -23,8 +25,14 @@ document.querySelector('.toggle-navbar').addEventListener('click', function(e){
 });
 
 
-document.querySelector('.search').addEventListener('click',function(e){
-    const parent = document.querySelector('.search-area')
-    parent.classList.remove('hidden')
-    parent.classList.add('inline')
+document.querySelector('#profile-container').addEventListener('click',function(e){
+    const parent = document.querySelector('.dropdown')
+    const userInfo = document.querySelector('.user-info')
+    if(parent.classList.contains('hidden')){
+        parent.classList.remove('hidden')
+        userInfo.classList.remove('active')
+    }else{
+        parent.classList.add('hidden')
+        userInfo.classList.add('active')
+    }
 });

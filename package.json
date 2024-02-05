@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "tailwindcss -i static/src/myapp.input.css -o static/css/myapp.output.css --watch"
+    "dev": "tailwindcss -i static/src/myapp.input.css -o static/css/akamai.main.css --watch"
   },
   "devDependencies": {
     "tailwind-scrollbar": "^3.0.5",

@@ -1,35 +1,68 @@
 {% load static %}
-<nav class="pt-2 pb-2 px-6 bg-white flex items-center shadow-black/5 navbar">
+<header class="pt-2 pb-2 px-6 bg-white flex items-center shadow-black/5 navbar">
     <div class="flex items-center">
         <button type="button" class="toggle-navbar">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
         </button>
-        <div class="search-area hidden">
-            <input type="search" class="w-96 px-3 py-3 outline-none" placeholder="Search">
+        <div class="search-area ml-3">
+            <form action="#" method="get">
+                <input type="text" spellcheck="false" class="md:w-96 px-4 py-3 outline-none bg-slate-100 rounded-full"
+                    placeholder="Search">
+            </form>
         </div>
     </div>
     <div class="ml-auto">
         <ul class="flex items-center gap-3">
             <li>
-                <a href="#" class="text-lg hover:text-gray-700 bg-gray-200 py-3.5 px-4 rounded text-gray-400 search">
+                <a href="#"
+                    class="text-lg transition ease-out duration-500 hover:text-gray-700 bg-gray-200 py-2.5 px-3 rounded-full text-gray-400 search">
                     <i class="ri-search-line"></i>
                 </a>
             </li>
             <li>
-                <a href="#" class="text-lg hover:text-gray-700 bg-gray-200 py-3.5 px-4 rounded text-gray-400">
+                <a href="#"
+                    class="text-lg transition ease-out duration-500 hover:text-gray-700 bg-gray-200 py-2.5 px-3 rounded-full text-gray-400">
                     <i class="ri-notification-3-line"></i>
                 </a>
             </li>
-            <li>
-                <a href="#" class="text-lg hover:text-gray-700 bg-gray-200 py-3.5 px-4 rounded text-gray-400">
-                    <i class="ri-settings-2-line"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/profile/50x50.png' %}" class="rounded" alt="Profile Image">
-                </a>
+            <li class="relative" id="profile-container">
+                <div class="group flex items-center gap-3 ml-3 cursor-pointer user-info">
+                    <div class="px-2 py-1 text-center">
+                        <span class="block">John J. Doe</span>
+                        <small class="block text-xs font-medium text-gray-250">Administrator</small>
+                    </div>
+                    <a href="#" class="flex items-center">
+                        <img src="{% static 'images/profile/50x50.png' %}" class="rounded-full mr-2" alt="Profile Image">
+                        <i class="ri-arrow-down-s-line text-lg text-gray-300 ml-auto group-[.active]:rotate-180"></i>
+                    </a>
+                </div>
+                <!-- Dropdown menu -->
+                <div class="dropdown z-10 hidden absolute font-normal bg-white divide-y divide-gray-100 rounded shadow w-44">
+                    <ul class="py-2 text-sm" >
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-slate-200">
+                                <i class="ri-user-line mr-2"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-slate-200">
+                                <i class="ri-sound-module-line mr-2"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-slate-200">
+                                <i class="ri-logout-box-line mr-2"></i>
+                                <span>Sign out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </div>
-</nav>
+</header>
