@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "tailwindcss -i static/src/myapp.input.css -o static/css/myapp.output.css --watch"
+  },
+  "devDependencies": {
+    "tailwind-scrollbar": "^3.0.5",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3"
+  }
+}
