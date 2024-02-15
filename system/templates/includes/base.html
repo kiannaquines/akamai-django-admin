@@ -13,7 +13,9 @@
     <main class="content w-[calc(100%-256px)] ml-64 py-11 overflow-y-auto scrollbar-thin">
         {% block content %}{% endblock content %}
     </main>
-    <script src="{% static 'js/akamai.main.js' %}"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="{% static 'js/akamai.main.js' %}"></script>
+    <script src="{% static 'js/akamai.charts.min.js' %}"></script>
 </body>
 </html>
