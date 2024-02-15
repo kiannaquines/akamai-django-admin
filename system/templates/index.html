@@ -5,8 +5,8 @@
         <h1 class="text-lg pb-3 font-semibold text-slate-800">E-commerce</h1>
         <div class="grid grid-flow-col grid-cols-4 gap-4 mb-3">
             <div class="flex flex-col bg-white shadow-sm px-4 py-4">
-                <a href="#" class="bg-gray-100 rounded-sm h-12 w-12 flex justify-center items-center">
-                    <i class="bi bi-currency-dollar text-slate-800 text-lg"></i>
+                <a href="#" class="bg-amber-300 rounded-sm h-12 w-12 flex justify-center items-center">
+                    <i class="bi bi-currency-dollar text-white text-lg"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">$ 500,000</h4>
                 <div class="flex justify-between align-middle">
@@ -18,8 +18,8 @@
                 </div>
             </div>
             <div class="flex flex-col bg-white shadow-sm px-4 py-4">
-                <a href="#" class="bg-gray-100 rounded-sm w-12 h-12 flex items-center justify-center">
-                    <i class="bi bi-wallet text-2xl align-middle text-slate-800"></i>
+                <a href="#" class="bg-orange-300 rounded-sm w-12 h-12 flex items-center justify-center">
+                    <i class="bi bi-wallet text-2xl align-middle text-white"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">$ 100,000</h4>
                 <div class="flex justify-between items-center align-middle">
@@ -99,7 +99,7 @@
             </div>
             <div class="flex flex-col bg-white shadow-sm py-4 px-4">
                 <a href="#" class="bg-gray-100 rounded-sm h-12 w-12 flex justify-center items-center">
-                    <i class="bi bi-person-dash text-slate-800 text-2xl"></i>
+                    <i class="bi bi-person-slash text-slate-800 text-2xl"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">2,000</h4>
                 <div class="flex justify-between items-center align-middle">
@@ -113,22 +113,15 @@
         </div>
         
         <div class="bg-white w-full h-auto mb-3 px-4 py-4">
-            <div id="yearlyPerformanceTracking"></div>
+            <div id="monthly-graph"></div>
         </div>
 
-        <div class="bg-white w-full h-10 mb-3">
-
-        </div>
-
-        <div class="grid grid-flow-col grid-cols-3 gap-4 mb-3">
-            <div class="bg-white w-full h-10">
-
+        <div class="grid grid-cols-3 gap-4 mb-3">
+            <div class="bg-white col-span-2 w-full h-auto px-4 py-4">
+                <div id="payment-graph"></div>
             </div>
-            <div class="bg-white w-full h-10">
-    
-            </div>
-            <div class="bg-white w-full h-10">
-
+            <div class="bg-white w-full h-auto px-4 py-4">
+                <div id="visitor-graph"></div>
             </div>
         </div>
 
