@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="{% static 'css/akamai.main.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
-<body class="font-inter scrollbar-thin scrollbar-track-slate-500 bg-gray-200">
+<body class="font-inter overflow-y-auto scrollbar-thin scrollbar-track-slate-500 bg-gray-100">
     {% include './sidebar.html' %}
-    <main class="main-content w-[calc(100% - 256px)] ml-64">
-        {% include './navbar.html' %}
+    {% include './navbar.html' %}
+    <main class="content w-[calc(100%-256px)] ml-64 py-11 overflow-y-auto scrollbar-thin">
         {% block content %}{% endblock content %}
     </main>
     <script src="{% static 'js/akamai.main.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </body>
 </html>

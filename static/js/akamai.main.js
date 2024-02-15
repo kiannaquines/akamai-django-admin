@@ -20,8 +20,34 @@ document.querySelectorAll('.sidebar-item').forEach(item => {
 });
 
 document.querySelector('.toggle-navbar').addEventListener('click', function(e){
-    document.querySelector('.sidebar').classList.add('hidden')
-    document.querySelector('.navbar').classList.add('w-full')
+    var sidebar = document.querySelector('.sidebar')
+    var navbar = document.querySelector('.navbar')
+    var content = document.querySelector('.content')
+
+    if(sidebar.classList.contains('hidden')){
+        sidebar.classList.remove('hidden')
+    }else{
+        sidebar.classList.add('hidden')        
+    }
+
+    if(content.classList.contains('w-[calc(100%-256px)]')){
+        content.classList.remove('w-[calc(100%-256px)]')
+        content.classList.remove('ml-64')
+    }else{
+        content.classList.add('w-[calc(100%-256px)]')
+        content.classList.add('ml-64')
+    }
+
+    if(navbar.classList.contains('sm:w-[calc(100%-256px)]')){
+        navbar.classList.remove('sm:w-[calc(100%-256px)]')
+        navbar.classList.remove('md:w-[calc(100%-256px)]')
+        navbar.classList.remove('lg:w-[calc(100%-256px)]')
+    }else{
+        navbar.classList.add('sm:w-[calc(100%-256px)]')
+        navbar.classList.add('md:w-[calc(100%-256px)]')
+        navbar.classList.add('lg:w-[calc(100%-256px)]')
+    }
+
 });
 
 
