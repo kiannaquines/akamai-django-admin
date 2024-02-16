@@ -1,0 +1,368 @@
+{% extends 'includes/base.html' %}
+{% block subtitle %}Sweet Alert 2{% endblock subtitle %}
+
+{% block content %}
+<div class="px-9 pt-10 w-full h-full">
+    <h1 class="text-lg pb-3 font-semibold text-slate-800">Sweet Alert 2</h1>
+
+    <div class="px-4 py-4 bg-white w-full h-auto mb-3">
+        <p class="text-gray-400">A beautiful, responsive, customizable, accessiable (WAI-ARIA) replacement for javascript's popup boxes zero dependencies.</p>
+
+        <div>
+
+        </div>
+    </div>
+    <div class="grid grid-cols-1 gap-4">
+        <div class="w-full px-4 py-4 h-auto bg-white rounded">
+            <h3 class="text-lg font-semibold text-slate-800 pb-2">Basic Set up</h3>
+            <div class="grid grid-cols-2 items-center gap-4">
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded basic">A basic message</button>
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded undertext">A title with a text under</button>
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded modalTitle">Modal with a title & footer</button>
+    
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded htmldesc">Custom HTML description</button>
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded dialog">Dialog with three buttons</button>
+    
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded positioned">Custom positioned dialog</button>
+            </div>
+        </div>
+        <div class="w-full px-4 py-4 h-auto bg-white rounded">
+            <h3 class="text-lg font-semibold text-slate-800 pb-2">Advance Set up</h3>
+            <div class="grid grid-cols-2 items-center gap-4">
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded confirm">Confirm dialog</button>
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded dismissed">Confirm with dissmiss reason</button>
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded customImage">Message with a custom image</button>
+    
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded animated">Custom animated background</button>
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded timer">Message with auto close timer</button>
+    
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded">Modal Title</button>
+            </div>
+        </div>
+        <div class="w-full px-4 py-4 h-auto bg-white rounded">
+            <h3 class="text-lg font-semibold text-slate-800 pb-2">SweetAlert Type</h3>
+            <div class="grid grid-cols-2 items-center gap-4">
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded success_alert">Success</button>
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded info_alert">Info</button>
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded error_alert">Error</button>
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded warning_alert">Warning</button>
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded question_alert">Question</button>
+                <button type="button" class="px-3 py-3 bg-primary text-white rounded toast_alert">Toast</button>    
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+{% block script %}
+<script>
+    document.querySelector(".basic").addEventListener('click', function(e){
+        e.preventDefault()
+        Swal.fire({
+            title: "Basic Sweet Alert",
+            confirmButtonColor: "#F31559",
+            confirmButtonText: "Exit Window",
+            timer: 5000,
+            timerProgressBar: true,
+        });
+    });
+    
+    document.querySelector(".undertext").addEventListener('click', function(e){
+        e.preventDefault()
+        Swal.fire({
+            title: "The Internet?",
+            text: "That thing is still around?",
+            icon: "question",
+            confirmButtonColor: "#F31559",
+            confirmButtonText: "Exit Window",
+            timer: 5000,
+            timerProgressBar: true,
+        });
+    });
+
+    document.querySelector(".modalTitle").addEventListener('click', function(e){
+        e.preventDefault()
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+            confirmButtonColor: "#F31559",
+            confirmButtonText: "Exit Window",
+            footer: '<a href="#">Why do I have this issue?</a>',
+            timer: 5000,
+            timerProgressBar: true,
+
+        });
+    });
+
+    document.querySelector(".htmldesc").addEventListener('click', function(e){
+        e.preventDefault()  
+        Swal.fire({
+            title: "<strong>HTML <u>example</u></strong>",
+            icon: "info",
+            html: `
+                You can use <b>bold text</b>,
+                <a href="#">links</a>,
+                and other HTML tags
+            `,
+            showCloseButton: true,
+            showCancelButton: true,
+            focusConfirm: false,
+            confirmButtonText: `<i class="ri-thumb-up-line"></i> Great!
+            `,
+            confirmButtonAriaLabel: "Thumbs up, great!",
+            cancelButtonText: `<i class="ri-thumb-down-line"></i>
+            `,
+            cancelButtonAriaLabel: "Thumbs down",
+            confirmButtonColor: "#F31559",
+            timer: 5000,
+            timerProgressBar: true,
+        });
+    });
+
+    document.querySelector(".dialog").addEventListener('click', function(e){
+        e.preventDefault()
+
+        Swal.fire({
+            title: "Do you want to save the changes?",
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: "Save",
+            denyButtonText: `Don't save`,
+            confirmButtonColor: "#F31559",
+            timer: 5000,
+            timerProgressBar: true,
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire("Saved!", "", "success");
+            } else if (result.isDenied) {
+                Swal.fire("Changes are not saved", "", "info");
+            }
+        });
+    });
+
+    document.querySelector(".positioned").addEventListener('click', function(e){
+        e.preventDefault()
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your work has been saved",
+            showConfirmButton: false,
+            timer: 1500,
+            confirmButtonColor: "#F31559",
+            timerProgressBar: true,
+        });
+    });
+
+    document.querySelector(".confirm").addEventListener('click', function(e){
+        e.preventDefault()
+
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!",
+            timer: 1500,
+            confirmButtonColor: "#F31559",
+            timerProgressBar: true,
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                title: "Deleted!",
+                text: "Your file has been deleted.",
+                icon: "success"
+                });
+            }
+        });
+    });
+
+    document.querySelector(".dismissed").addEventListener('click', function(e){
+        e.preventDefault()
+
+        const swalWithBootstrapButtons = Swal.mixin({
+            buttonsStyling: false
+        });
+
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Yes, delete it!",
+            cancelButtonText: "No, cancel!",
+            reverseButtons: true,
+            timer: 5000,
+            confirmButtonColor: "#F31559",
+            timerProgressBar: true,
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success",
+                    showCancelButton: false,
+                    showConfirmButton: true,
+                    confirmButtonColor: "#F31559",
+                });
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+                Swal.fire({
+                    title: "Cancelled",
+                    text: "Your imaginary file is safe :)",
+                    icon: "error",
+                    showCancelButton: false,
+                    showConfirmButton: true,
+                    confirmButtonColor: "#F31559",
+                });
+            }
+        });
+    });
+
+    document.querySelector(".customImage").addEventListener('click', function(e){
+        e.preventDefault()
+
+        Swal.fire({
+            title: "Sweet!",
+            text: "Modal with a custom image.",
+            imageUrl: "https://unsplash.it/400/200",
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: "Custom image",
+            timer: 5000,
+            confirmButtonColor: "#F31559",
+            timerProgressBar: true,
+        });
+    });
+
+    document.querySelector(".animated").addEventListener('click', function(e){
+        e.preventDefault()
+
+        Swal.fire({
+            title: "Custom width, padding, color, background.",
+            width: 600,
+            padding: "3em",
+            color: "#716add",
+            background: "#fff url(https://sweetalert2.github.io/images/trees.png)",
+            backdrop: `
+                rgba(0,0,123,0.4)
+                url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                left top
+                no-repeat
+            `
+        });
+    });
+
+    document.querySelector(".timer").addEventListener('click', function(e){
+        e.preventDefault()
+
+        let timerInterval;
+        Swal.fire({
+            title: "Auto close alert!",
+            html: "I will close in <b></b> milliseconds.",
+            timer: 5000,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading();
+                const timer = Swal.getPopup().querySelector("b");
+                timerInterval = setInterval(() => {
+                timer.textContent = `${Swal.getTimerLeft()}`;
+                }, 100);
+            },
+            willClose: () => {
+                clearInterval(timerInterval);
+            }
+        }).then((result) => {
+            if (result.dismiss === Swal.DismissReason.timer) {
+                console.log("I was closed by the timer");
+            }
+        });
+    });
+
+    document.querySelector(".success_alert").addEventListener('click', function(e){
+        e.preventDefault()
+        Swal.fire({
+            title: "Success",
+            text: "That thing is still around?",
+            icon: "success",
+            confirmButtonColor: "#F31559",
+            confirmButtonText: "Exit Window",
+            timer: 5000,
+            timerProgressBar: true,
+        });
+    });
+
+    document.querySelector(".info_alert").addEventListener('click', function(e){
+        e.preventDefault()
+        Swal.fire({
+            title: "Info",
+            text: "That thing is still around?",
+            icon: "info",
+            confirmButtonColor: "#F31559",
+            confirmButtonText: "Exit Window",
+            timer: 5000,
+            timerProgressBar: true,
+        });
+    });
+
+
+    document.querySelector(".error_alert").addEventListener('click', function(e){
+        e.preventDefault()
+        Swal.fire({
+            title: "Error",
+            text: "That thing is still around?",
+            icon: "error",
+            confirmButtonColor: "#F31559",
+            confirmButtonText: "Exit Window",
+            timer: 5000,
+            timerProgressBar: true,
+        });
+    });
+
+    document.querySelector(".warning_alert").addEventListener('click', function(e){
+        e.preventDefault()
+        Swal.fire({
+            title: "Warning",
+            text: "That thing is still around?",
+            icon: "warning",
+            confirmButtonColor: "#F31559",
+            confirmButtonText: "Exit Window",
+            timer: 5000,
+            timerProgressBar: true,
+        });
+    });
+
+    document.querySelector(".question_alert").addEventListener('click', function(e){
+        e.preventDefault()
+        Swal.fire({
+            title: "Question",
+            text: "That thing is still around?",
+            icon: "question",
+            confirmButtonColor: "#F31559",
+            confirmButtonText: "Exit Window",
+            timer: 5000,
+            timerProgressBar: true,
+        });
+    });
+
+    document.querySelector(".toast_alert").addEventListener('click', function(e){
+        e.preventDefault()
+        
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+        
+        Toast.fire({
+            icon: "success",
+            title: "You have successfully clicked!"
+        });
+    });
+</script>
+{% endblock script %}

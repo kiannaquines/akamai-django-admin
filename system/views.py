@@ -20,3 +20,8 @@ def stock(request):
 def marketing(request):
     context = {}
     return render(request,"marketing.html",context)
+
+
+def sweetalert(request):
+    context = {}
+    return render(request,"ui/sweetalert.html",context)

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akamai Information System Solution</title>
+    <title>Akamai Information System Solution {% block subtitle %}{% endblock subtitle %}</title>
     <link rel="stylesheet" href="{% static 'css/akamai.main.css' %}">
     <link rel="stylesheet" href="{% static 'css/akamai.default.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
-<body class="font-inter transition-all ease-in-out duration-1000 scrollbar-track-slate-500 bg-gray-100">
+<body class="font-nunito scrollbar-track-slate-500 bg-gray-100">
     {% include './sidebar.html' %}
     {% include './navbar.html' %}
     <main class="content w-[calc(100%-256px)] ml-64 py-11 overflow-y-auto scrollbar-thin">
@@ -19,5 +19,7 @@
     <script src="{% static 'js/akamai.helper.charts.min.js' %}"></script>
     <script src="{% static 'js/akamai.main.js' %}"></script>
     <script src="{% static 'js/akamai.charts.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    {% block script %}{% endblock script %}
 </body>
 </html>

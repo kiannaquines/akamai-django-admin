@@ -1,5 +1,5 @@
 from django.urls import path
-from system.views import index,analytics,stock,crm,marketing
+from system.views import index,analytics,stock,crm,marketing,sweetalert
 
 urlpatterns = [
     path('',index,name="index"),
@@ -7,4 +7,6 @@ urlpatterns = [
     path('dashboard/stock/',stock,name="stock"),
     path('dashboard/crm/',crm,name="crm"),
     path('dashboard/marketing/',marketing,name="marketing"),
+
+    path('ui/sweetalert/',sweetalert,name="sweetalert"),
 ]

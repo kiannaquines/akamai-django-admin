@@ -15,7 +15,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      inter:['Inter','sans-serif']
+      nunito:['Nunito Sans','sans-serif']
     },
   },
   backgroundColor: {
@@ -27,6 +27,7 @@ module.exports = {
       'info': '#FFECAF',
       'green': '#65B741',
       'white': '#FFFFFF',
+      'blue': '#223e9c',
   },
   plugins: [
     require('tailwind-scrollbar'),
