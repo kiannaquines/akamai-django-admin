@@ -25,7 +25,7 @@ module.exports = {
       'secondary': '#FF52A2',
       'warning': '#FFB07F',
       'info': '#FFECAF',
-      'success': '#65B741',
+      'green': '#65B741',
       'white': '#FFFFFF',
   },
   plugins: [

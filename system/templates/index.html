@@ -1,10 +1,10 @@
 {% extends "includes/base.html" %}
-
+{% load static %}
 {% block content %}
     <div class="px-9 pt-10 w-full h-full">
         <h1 class="text-lg pb-3 font-semibold text-slate-800">E-commerce</h1>
-        <div class="grid grid-flow-col grid-cols-4 gap-4 mb-3">
-            <div class="flex flex-col bg-white shadow-sm px-4 py-4">
+        <div class="grid gap-4 mb-3 md:grid-flow-row md:grid-rows-2 lg:grid-flow-col lg:grid-cols-4">
+            <div class="flex flex-col bg-white shadow-black/5 px-4 py-4">
                 <a href="#" class="bg-amber-300 rounded-sm h-12 w-12 flex justify-center items-center">
                     <i class="bi bi-currency-dollar text-white text-lg"></i>
                 </a>
@@ -17,7 +17,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col bg-white shadow-sm px-4 py-4">
+            <div class="flex flex-col bg-white shadow-black/5 px-4 py-4">
                 <a href="#" class="bg-orange-300 rounded-sm w-12 h-12 flex items-center justify-center">
                     <i class="bi bi-wallet text-2xl align-middle text-white"></i>
                 </a>
@@ -30,9 +30,9 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white flex flex-col shadow-sm px-4 py-4">
-                <a href="#" class="bg-gray-100 rounded-sm w-12 h-12 flex items-center justify-center">
-                    <i class="bi bi-box-seam text-2xl align-middle text-slate-800"></i>
+            <div class="flex flex-col bg-white shadow-black/5 px-4 py-4">
+                <a href="#" class="bg-red-300 rounded-sm w-12 h-12 flex items-center justify-center">
+                    <i class="bi bi-box-seam text-2xl align-middle text-white"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">$ 70,000</h4>
                 <div class="flex justify-between items-center align-middle">
@@ -43,9 +43,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col bg-white shadow-sm py-4 px-4">
-                <a href="#" class="bg-gray-100 rounded-sm h-12 w-12 flex justify-center items-center">
-                    <i class="bi bi-people text-slate-800 text-lg"></i>
+            <div class="flex flex-col bg-white shadow-black/5 py-4 px-4">
+                <a href="#" class="bg-lime-300 rounded-sm h-12 w-12 flex justify-center items-center">
+                    <i class="bi bi-people text-white text-lg"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">34,000</h4>
                 <div class="flex justify-between items-center align-middle">
@@ -56,11 +56,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid grid-flow-col grid-cols-4 gap-4 mb-3">
-            <div class="flex flex-col bg-white shadow-sm py-4 px-4">
-                <a href="#" class="bg-gray-100 rounded-sm h-12 w-12 flex justify-center items-center">
-                    <i class="bi bi-bag-dash text-slate-800 text-lg"></i>
+            <div class="flex flex-col bg-white shadow-black/5 py-4 px-4">
+                <a href="#" class="bg-green-300 rounded-sm h-12 w-12 flex justify-center items-center">
+                    <i class="bi bi-bag-dash text-white text-lg"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">10,000</h4>
                 <div class="flex justify-between align-middle">
@@ -71,9 +69,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col bg-white shadow-sm py-4 px-4">
-                <a href="#" class="bg-gray-100 rounded-sm w-12 h-12 flex items-center justify-center">
-                    <i class="bi bi-bank text-2xl align-middle text-slate-800"></i>
+            <div class="flex flex-col bg-white shadow-black/5 py-4 px-4">
+                <a href="#" class="bg-emerald-300 rounded-sm w-12 h-12 flex items-center justify-center">
+                    <i class="bi bi-bank text-2xl align-middle text-white"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">$ 1,000,000</h4>
                 <div class="flex justify-between items-center align-middle">
@@ -84,9 +82,9 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white flex flex-col shadow-sm py-4 px-4">
-                <a href="#" class="bg-gray-100 rounded-sm w-12 h-12 flex items-center justify-center">
-                    <i class="bi bi-box-seam text-2xl align-middle text-slate-800"></i>
+            <div class="flex flex-col bg-white shadow-black/5 py-4 px-4">
+                <a href="#" class="bg-teal-300 rounded-sm w-12 h-12 flex items-center justify-center">
+                    <i class="bi bi-box-seam text-2xl align-middle text-white"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">1,000</h4>
                 <div class="flex justify-between items-center align-middle">
@@ -97,9 +95,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col bg-white shadow-sm py-4 px-4">
-                <a href="#" class="bg-gray-100 rounded-sm h-12 w-12 flex justify-center items-center">
-                    <i class="bi bi-person-slash text-slate-800 text-2xl"></i>
+            <div class="flex flex-col bg-white shadow-black/5 py-4 px-4">
+                <a href="#" class="bg-sky-300 rounded-sm h-12 w-12 flex justify-center items-center">
+                    <i class="bi bi-person-slash text-white text-2xl"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">2,000</h4>
                 <div class="flex justify-between items-center align-middle">
@@ -112,21 +110,197 @@
             </div>
         </div>
         
-        <div class="bg-white w-full h-auto mb-3 px-4 py-4">
+        <div class="bg-white shadow-black/5 w-full h-auto mb-3 px-4 py-4">
             <div id="monthly-graph"></div>
         </div>
 
-        <div class="grid grid-cols-3 gap-4 mb-3">
-            <div class="bg-white col-span-2 w-full h-auto px-4 py-4">
+        <div class="grid lg:grid-cols-2 md:grid-rows-1 gap-4 mb-3">
+            <div class="bg-white shadow-black/5 w-full h-auto px-4 py-4">
                 <div id="payment-graph"></div>
             </div>
-            <div class="bg-white w-full h-auto px-4 py-4">
+            <div class="bg-white shadow-black/5 w-full h-auto px-4 py-4">
                 <div id="visitor-graph"></div>
             </div>
         </div>
 
-        <div class="bg-white w-full h-10">
-
+        <div class="bg-white w-full h-auto py-4 overflow-x-auto">
+            <h1 class="text-lg px-6 py-3 font-semibold text-slate-800">Customer Leads Report</h1>
+            <table class="w-full text-sm">
+                <thead class="border-b">
+                    <tr class="text-sm font-light text-gray-500 capitalize text-left">
+                        <th class="px-6 py-3">
+                            Customer
+                        </th>
+                        <th class="px-6 py-3">
+                            Location
+                        </th>
+                        <th class="px-6 py-3">
+                            Total Order
+                        </th>
+                        <th class="px-6 py-3">
+                            Amount
+                        </th>
+                        <th class="px-6 py-3">
+                            Status
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b">
+                        <td class="flex items-center gap-4 px-6 py-3">
+                            <img src="{% static 'images/profile/profile1.jpg' %}" class="w-10 h-10 rounded-full" alt="">
+                            <div class="flex flex-col items-start">
+                                <span class="text-gray-500">Jane C. Doe</span>
+                                <span class="text-xs text-gray-400/75">janecdoe@gmail.com</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">
+                            123 Main St, Cityville, State
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">
+                            1000
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">
+                            $1000
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">
+                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b">
+                        <td class="flex items-center gap-4 px-6 py-3">
+                            <img src="{% static 'images/profile/profile2.jpg' %}" class="w-10 h-10 rounded-full" alt="">
+                            <div class="flex flex-col items-start">
+                                <span class="text-gray-500">Aaron James</span>
+                                <span class="text-xs text-gray-400/75">aaron@gmail.com</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">
+                            456 Oak St, Townsville, State
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">
+                            1000
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">
+                            $1000
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">
+                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b">
+                        <td class="flex items-center gap-4 px-6 py-3">
+                            <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
+                            <div class="flex flex-col items-start">
+                                <span class="text-gray-500">Christina Jones</span>
+                                <span class="text-xs text-gray-400/75">cristina@gmail.com</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">
+                            789 Pine St, Villagetown, State
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">
+                            1000
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">
+                            $1000
+                        </td>
+                        <td class="px-6 py-3">
+                            <span class="bg-primary px-2 py-1 text-white rounded-sm">Inactive</span>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b">
+                        <td class="flex items-center gap-4 px-6 py-3">
+                            <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
+                            <div class="flex flex-col items-start">
+                                <span class="text-gray-500">Charlie Brown</span>
+                                <span class="text-xs text-gray-400/75">charlie@gmail.com</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">555 Elm St, Riverside, State</td>
+                        <td class="px-6 py-3 text-gray-500">7</td>
+                        <td class="px-6 py-3 text-gray-500">$700</td>
+                        <td class="px-6 py-3">
+                            <span class="bg-primary px-2 py-1 text-white rounded-sm">Inactive</span>
+                        </td>
+                      </tr>
+                      <tr class="bg-white border-b">
+                        <td class="flex items-center gap-4 px-6 py-3">
+                            <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
+                            <div class="flex flex-col items-start">
+                                <span class="text-gray-500">Eva Davis</span>
+                                <span class="text-xs text-gray-400/75">eva@gmail.com</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">222 Oak Dr, Hilltop, State</td>
+                        <td class="px-6 py-3 text-gray-500">4</td>
+                        <td class="px-6 py-3 text-gray-500">$400</td>
+                        <td class="px-6 py-3">
+                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                        </td>
+                      </tr>
+                      <tr class="bg-white border-b">
+                        <td class="flex items-center gap-4 px-6 py-3">
+                            <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
+                            <div class="flex flex-col items-start">
+                                <span class="text-gray-500">Frank Miller</span>
+                                <span class="text-xs text-gray-400/75">frankmiller@gmail.com</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">777 Cedar Ave, Summit, State</td>
+                        <td class="px-6 py-3 text-gray-500">6</td>
+                        <td class="px-6 py-3 text-gray-500">$600</td>
+                        <td class="px-6 py-3">
+                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                        </td>
+                      </tr>
+                      <tr class="bg-white border-b">
+                        <td class="flex items-center gap-4 px-6 py-3">
+                            <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
+                            <div class="flex flex-col items-start">
+                                <span class="text-gray-500">Grace Wilson</span>
+                                <span class="text-xs text-gray-400/75">gracewillsion@gmail.com</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">888 Birch Rd, Lakeside, State</td>
+                        <td class="px-6 py-3 text-gray-500">9</td>
+                        <td class="px-6 py-3 text-gray-500">$900</td>
+                        <td class="px-6 py-3">
+                            <span class="bg-primary px-2 py-1 text-white rounded-sm inline">Inactive</span>
+                        </td>
+                      </tr>
+                      <tr class="bg-white border-b">
+                        <td class="flex items-center gap-4 px-6 py-3">
+                            <img src="{% static 'images/profile/profile1.jpg' %}" class="w-10 h-10 rounded-full" alt="">
+                            <div class="flex flex-col items-start">
+                                <span class="text-gray-500">Henry Turner</span>
+                                <span class="text-xs text-gray-400/75">henrytuner@gmail.com</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">333 Pine Dr, Valleyview, State</td>
+                        <td class="px-6 py-3 text-gray-500">1</td>
+                        <td class="px-6 py-3 text-gray-500">$100</td>
+                        <td class="px-6 py-3">
+                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                        </td>
+                      </tr>
+                      <tr class="bg-white">
+                        <td class="flex items-center gap-4 px-6 py-3">
+                            <img src="{% static 'images/profile/profile2.jpg' %}" class="w-10 h-10 rounded-full" alt="">
+                            <div class="flex flex-col items-start">
+                                <span class="text-gray-500">Isabel Lee</span>
+                                <span class="text-xs text-gray-400/75">isabellee@gmail.com</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-3 text-gray-500">444 Maple Ct, Brookside, State</td>
+                        <td class="px-6 py-3 text-gray-500">10</td>
+                        <td class="px-6 py-3 text-gray-500">$1000</td>
+                        <td class="px-6 py-3">
+                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                        </td>
+                      </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 {% endblock content %}
