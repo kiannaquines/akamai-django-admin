@@ -7,3 +7,16 @@ def index(request):
 def analytics(request):
     context = {}
     return render(request,"analytics.html",context)
+
+def crm(request):
+    context = {}
+    return render(request,"crm.html",context)
+
+
+def stock(request):
+    context = {}
+    return render(request,"stock.html",context)
+
+def marketing(request):
+    context = {}
+    return render(request,"marketing.html",context)
