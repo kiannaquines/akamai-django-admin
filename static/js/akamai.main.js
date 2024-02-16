@@ -9,7 +9,6 @@ window.addEventListener("load",() => {
 
 document.querySelectorAll('.sidebar-item').forEach(item => {
     item.addEventListener('click', function(e){
-        e.preventDefault()
         const Subparent = item.closest('.group')
         if(!Subparent.classList.contains('selected')){
             Subparent.classList.add('selected')
