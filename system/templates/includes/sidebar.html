@@ -208,7 +208,7 @@
             </a>
             <ul class="pl-6 items-center text-gray-200 hidden group-[.selected]:block">
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="{% url 'alert' %}" class="flex py-2 hover:text-gray-500 text-gray-400">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Alert</span>
                     </a>
@@ -220,13 +220,7 @@
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
-                        <i class="ri-phone-lock-line mr-2"></i>
-                        <span class="text-sm">Forgot Password</span>
-                    </a>
-                </li>
-                <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="{% url 'buttons' %}" class="flex py-2 hover:text-gray-500 text-gray-400">
                         <i class="ri-phone-lock-line mr-2"></i>
                         <span class="text-sm">Buttons</span>
                     </a>

@@ -25,3 +25,11 @@ def marketing(request):
 def sweetalert(request):
     context = {}
     return render(request,"ui/sweetalert.html",context)
+
+def alert(request):
+    context = {}
+    return render(request,"ui/alert.html",context)
+
+def buttons(request):
+    context = {}
+    return render(request,"ui/buttons.html",context)

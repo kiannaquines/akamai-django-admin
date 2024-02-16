@@ -19,15 +19,13 @@ module.exports = {
     },
   },
   backgroundColor: {
-      transparent: 'transparent',
-      current: 'currentColor',
       'primary': '#F31559',
       'secondary': '#FF52A2',
       'warning': '#FFB07F',
       'info': '#FFECAF',
       'green': '#65B741',
       'white': '#FFFFFF',
-      'blue': '#223e9c',
+      'question': '#223e9c',
   },
   plugins: [
     require('tailwind-scrollbar'),

@@ -1,0 +1,190 @@
+{% extends 'includes/base.html' %}
+{% block subtitle %}Alert{% endblock subtitle %}
+
+{% block content %}
+<div class="px-9 pt-10 w-full h-full">
+    <h1 class="text-lg pb-3 font-semibold text-slate-800">
+        <a href="#" target="_blank">Alert</a>
+    </h1>
+    <div class="grid grid-cols-2 gap-4">
+
+        <div class="px-4 py-4 bg-white w-full h-auto">
+            <h3 class="text-lg font-semibold text-slate-800 pb-2">Basic Alerts</h3>
+
+            <div class="bg-primary w-full h-auto py-2 px-3 rounded mb-3">
+                <span class="text-white">
+                    Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="bg-success w-full h-auto py-2 px-3 rounded mb-3">
+                <span class="text-white">
+                    Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="bg-warning w-full h-auto py-2 px-3 rounded mb-3">
+                <span class="text-white">
+                    Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="bg-info w-full h-auto py-2 px-3 rounded mb-3">
+                <span class="text-gray-500">
+                    Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="bg-slate-500 w-full h-auto py-2 px-3 rounded">
+                <span class="text-white">
+                    Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+        </div>
+
+        <div class="px-4 py-4 bg-white w-full h-auto">
+            <h3 class="text-lg font-semibold text-slate-800 pb-2">Toggle Exit Alerts</h3>
+
+            <div class="bg-primary w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-white">
+                    <i class="ri-close-line mr-3 cursor-pointer"></i>
+                    Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="bg-success w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-white">
+                    <i class="ri-close-line mr-3 cursor-pointer"></i>
+                    Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="bg-warning w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-white">
+                    <i class="ri-close-line mr-3 cursor-pointer"></i>
+                    Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="bg-info w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-gray-500">
+                    <i class="ri-close-line mr-3 cursor-pointer"></i>
+                    Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="bg-slate-500 w-full h-auto py-2 px-3 rounded relative top-0 right-0">
+                <span class="text-white">
+                    <i class="ri-close-line mr-3 cursor-pointer"></i>
+                    Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+        </div>
+
+        <div class="px-4 py-4 bg-white w-full h-auto">
+            <h3 class="text-lg font-semibold text-slate-800 pb-2">Outline Alerts</h3>
+
+            <div class="outline outline-offset-1 outline-red-500 w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-dark text-sm">
+                    <i class="ri-close-line mr-3 cursor-pointer text-red-500"></i>
+                    <b>Primary Alert1</b> Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="outline outline-offset-1 outline-green-500 w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-dark text-sm">
+                    <i class="ri-close-line mr-3 cursor-pointer text-green-500"></i>
+                    <b>Secondary Alert!</b> Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="outline ouline-offset-1 outline-orange-500 w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-dark text-sm">
+                    <i class="ri-close-line mr-3 cursor-pointer text-orange-500"></i>
+                    <b>Danger Alert!</b> Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="outline ouline-offset-1 outline-amber-500 w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-gray-500 text-sm">
+                    <i class="ri-close-line mr-3 cursor-pointer text-amber-500"></i>
+                    <b class="text-dark">Info Alert!</b> Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+
+            <div class="outline outline-offset-1 outline-slate-500 w-full h-auto py-2 px-3 rounded relative top-0 right-0">
+                <span class="text-dark text-sm">
+                    <i class="ri-close-line mr-3 cursor-pointer text-slate-400"></i>
+                    <b>Success Alert!</b> Temporibus quos debitis dolores sint quasi doloremque quas iste maiores, odit repudiandae alias consequatur odio nulla rem deserunt exercitationem labore et velit.
+                </span>
+            </div>
+        </div>
+
+        <div class="px-4 py-4 bg-white w-full h-auto">
+            <h3 class="text-lg font-semibold text-slate-800 pb-2">Adavance Alerts</h3>
+
+            <div class="bg-red-50 w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-red-800">
+                    <i class="ri-close-line mr-3 cursor-pointer"></i>
+                    Ensure that these requirements are met:
+                    <ul class="mt-1.5 ml-5 list-disc list-inside">
+                        <li>At least 10 characters (and up to 100 characters)</li>
+                        <li>At least one lowercase character</li>
+                        <li>Inclusion of at least one special character, e.g., ! @ # ?</li>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="bg-blue-50 w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-blue-800">
+                    <i class="ri-close-line mr-3 cursor-pointer"></i>
+                    Ensure that these requirements are met:
+                    <ul class="mt-1.5 ml-5 list-disc list-inside">
+                        <li>At least 10 characters (and up to 100 characters)</li>
+                        <li>At least one lowercase character</li>
+                        <li>Inclusion of at least one special character, e.g., ! @ # ?</li>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="bg-warning w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-white">
+                    <i class="ri-close-line mr-3 cursor-pointer"></i>
+                    Ensure that these requirements are met:
+                    <ul class="mt-1.5 ml-5 list-disc list-inside">
+                        <li>At least 10 characters (and up to 100 characters)</li>
+                        <li>At least one lowercase character</li>
+                        <li>Inclusion of at least one special character, e.g., ! @ # ?</li>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="bg-info w-full h-auto py-2 px-3 rounded relative top-0 right-0 mb-3">
+                <span class="text-gray-500">
+                    <i class="ri-close-line mr-3 cursor-pointer"></i>
+                    Ensure that these requirements are met:
+                    <ul class="mt-1.5 ml-5 list-disc list-inside">
+                        <li>At least 10 characters (and up to 100 characters)</li>
+                        <li>At least one lowercase character</li>
+                        <li>Inclusion of at least one special character, e.g., ! @ # ?</li>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="bg-slate-500 w-full h-auto py-2 px-3 rounded relative top-0 right-0">
+                <span class="text-white">
+                    <i class="ri-close-line mr-3 cursor-pointer"></i>
+                    Ensure that these requirements are met:
+                    <ul class="mt-1.5 ml-5 list-disc list-inside">
+                        <li>At least 10 characters (and up to 100 characters)</li>
+                        <li>At least one lowercase character</li>
+                        <li>Inclusion of at least one special character, e.g., ! @ # ?</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock content %}
