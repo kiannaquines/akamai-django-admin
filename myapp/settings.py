@@ -107,7 +107,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 STATICFILES_DIRS = [
 	BASE_DIR /  'static',
 	'/home/router/Desktop/myapp/static'

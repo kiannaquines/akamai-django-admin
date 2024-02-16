@@ -1,13 +1,15 @@
-window.onload = function(){
+window.addEventListener("load",() => {
     document.querySelectorAll('.sidebar-item').forEach(item => {
         if(item.classList.contains('active')){
-            // alert("Naay active")
+            item.closest('.group').classList.add('selected')
         }
     });
-}
+})
+
 
 document.querySelectorAll('.sidebar-item').forEach(item => {
-    item.addEventListener('click', function(){
+    item.addEventListener('click', function(e){
+        e.preventDefault()
         const Subparent = item.closest('.group')
         if(!Subparent.classList.contains('selected')){
             Subparent.classList.add('selected')
@@ -20,6 +22,9 @@ document.querySelectorAll('.sidebar-item').forEach(item => {
 });
 
 document.querySelector('.toggle-navbar').addEventListener('click', function(e){
+
+    e.preventDefault()
+
     var sidebar = document.querySelector('.sidebar')
     var navbar = document.querySelector('.navbar')
     var content = document.querySelector('.content')
@@ -52,6 +57,8 @@ document.querySelector('.toggle-navbar').addEventListener('click', function(e){
 
 
 document.querySelector('#profile-container').addEventListener('click',function(e){
+    e.preventDefault()
+
     const parent = document.querySelector('.dropdown')
     const userInfo = document.querySelector('.user-info')
     if(parent.classList.contains('hidden')){
