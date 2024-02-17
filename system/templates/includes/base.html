@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{% static 'css/akamai.main.css' %}">
     <link rel="stylesheet" href="{% static 'css/akamai.default.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="">
 </head>
 <body class="font-nunito scrollbar-track-slate-500 bg-gray">
     {% include './sidebar.html' %}
@@ -14,11 +15,8 @@
     <main class="content w-[calc(100%-256px)] ml-64 py-11 overflow-y-auto scrollbar-thin">
         {% block content %}{% endblock content %}
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="{% static 'js/akamai.helper.charts.min.js' %}"></script>
     <script src="{% static 'js/akamai.main.js' %}"></script>
-    <script src="{% static 'js/akamai.charts.min.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     {% block script %}{% endblock script %}
 </body>

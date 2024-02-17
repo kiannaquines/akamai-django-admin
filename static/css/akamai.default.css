@@ -9,3 +9,8 @@
 :focus {
     outline: none;
 }
+
+.dt-info{
+    margin-left: 10px;
+    color: gray;
+}

@@ -33,3 +33,24 @@ def alert(request):
 def buttons(request):
     context = {}
     return render(request,"ui/buttons.html",context)
+
+def datatable(request):
+    context = {}
+    return render(request,"pages/datatable.html",context)
+
+def normaltable(request):
+    context = {}
+    return render(request,"table/normal.html",context)
+
+def protable(request):
+    context = {}
+    return render(request,"table/pro.html",context)
+
+def blankpage(request):
+    context = {}
+    return render(request,"pages/datatable.html",context)
+
+
+def error404page(request):
+    context = {}
+    return render(request,"pages/datatable.html",context)

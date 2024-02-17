@@ -91,13 +91,13 @@
             </a>
             <ul class="pl-6 items-center text-white hidden group-[.selected]:block">
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
+                    <a href="{% url 'normaltable' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Normal Table</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
+                    <a href="{% url 'protable' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Pro Table</span>
                     </a>
@@ -112,13 +112,13 @@
             </a>
             <ul class="pl-6 items-center text-white hidden group-[.selected]:block">
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
+                    <a href="{% url 'blankpage' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Blank Page</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
+                    <a href="{% url 'datatable' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Datatables</span>
                     </a>
@@ -126,7 +126,19 @@
                 <li class="group pl-2">
                     <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
-                        <span class="text-sm">Error Page</span>
+                        <span class="text-sm">Error 404</span>
+                    </a>
+                </li>
+                <li class="group pl-2">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
+                        <i class="ri-login-box-line mr-2"></i>
+                        <span class="text-sm">Error 400</span>
+                    </a>
+                </li>
+                <li class="group pl-2">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
+                        <i class="ri-login-box-line mr-2"></i>
+                        <span class="text-sm">Error 500</span>
                     </a>
                 </li>
             </ul>

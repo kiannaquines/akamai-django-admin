@@ -5,3 +5,10 @@
     <h1 class="text-lg pb-3 font-semibold text-slate-800">Marketing</h1>
 </div>
 {% endblock content %}
+
+{% block script %}
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="{% static 'js/akamai.helper.charts.min.js' %}"></script>
+    <script src="{% static 'js/akamai.charts.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{% endblock script %}

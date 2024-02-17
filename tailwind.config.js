@@ -14,8 +14,8 @@ module.exports = {
       'info':'#293042',
       'danger':'#B31312',
       'orange': '#FFA447',
+      'yellow': '1B1A55',
       'white':'#FFFFFF',
-      'main':'#F1F5F9'
     },
   },
   plugins: [
