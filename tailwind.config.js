@@ -23,9 +23,7 @@ module.exports = {
       'secondary': '#FF52A2',
       'warning': '#FFB07F',
       'info': '#FFECAF',
-      'green': '#65B741',
       'white': '#FFFFFF',
-      'question': '#223e9c',
   },
   plugins: [
     require('tailwind-scrollbar'),
