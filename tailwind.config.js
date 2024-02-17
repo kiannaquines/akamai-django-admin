@@ -2,28 +2,21 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {
-      colors: {
-          transparent: 'transparent',
-          current: 'currentColor',
-          'primary': '#F31559',
-          'secondary': '#FF52A2',
-          'warning': '#FFB07F',
-          'info': '#FFECAF',
-          'success': '#65B741',
-          'white': '#FFFFFF',
-      },
-    },
+    extend: {},
     fontFamily: {
       nunito:['Nunito Sans','sans-serif']
     },
-  },
-  backgroundColor: {
-      'primary': '#F31559',
-      'secondary': '#FF52A2',
-      'warning': '#FFB07F',
-      'info': '#FFECAF',
-      'white': '#FFFFFF',
+    colors: {
+      'primary':'#3C50E0',
+      'secondary':'#27C08D',
+      'gray': '#F1F5F9',
+      'dark':'#323948',
+      'info':'#293042',
+      'danger':'#B31312',
+      'orange': '#FFA447',
+      'white':'#FFFFFF',
+      'main':'#F1F5F9'
+    },
   },
   plugins: [
     require('tailwind-scrollbar'),

@@ -1,43 +1,43 @@
 {% load static %}
-<aside class="fixed z-50 top-0 bottom-0 lg:left-0 h-full text-center bg-gray-900 p-6 overflow-y-auto transition-all ease-linear duration-1000 sidebar">
+<div class="fixed z-50 top-0 bottom-0 lg:left-0 h-full text-center bg-info p-6 overflow-y-auto transition-transform sidebar">
    <a href="#" class="flex items-center">
         <img src="{% static 'images/logo/32x32.png' %}" alt="Akamai Solution" class="w-10 h-10 rounded object-cover">
-        <span class="text-md font-bold text-gray-200 mx-5">Sleeves Solution</span>
+        <span class="text-md font-bold text-white mx-5">Sleeves Solution</span>
    </a>
    <ul class="mt-4">
         <li class="group mb-1 sidebar-item active">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500 rounded">
                 <i class="ri-dashboard-line mr-5"></i>
                 <span class="text-sm">Dashbord</span>
                 <i class="ri-arrow-right-s-line ml-auto group-[.active]:rotate-90"></i>
             </a>
-            <ul class="pl-6 items-center text-gray-200 hidden group-[.selected]:block">
+            <ul class="pl-6 items-center text-white hidden group-[.selected]:block">
                 <li class="group pl-2">
-                    <a href="{% url 'index' %}" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="{% url 'index' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-store-line mr-2"></i>
                         <span class="text-sm">E-commerce</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="{% url 'analytics' %}" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="{% url 'analytics' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-line-chart-line mr-2"></i>
                         <span class="text-sm">Analytics</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="{% url 'stock' %}" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="{% url 'stock' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-funds-line mr-2"></i>
                         <span class="text-sm">Stock</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="{% url 'crm' %}" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="{% url 'crm' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-user-heart-line mr-2"></i>
                         <span class="text-sm">CRM</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="{% url 'marketing' %}" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="{% url 'marketing' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-bar-chart-grouped-line mr-2"></i>
                     <span class="text-sm">Marketing</span>
                     </a>
@@ -45,38 +45,38 @@
             </ul>
         </li>
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 rounded group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 rounded group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500">
                 <i class="ri-user-line mr-5"></i>
                 <span class="text-sm">Profile</span>
             </a>
         </li>
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500 rounded">
                 <i class="ri-calendar-line mr-5"></i>
                 <span class="text-sm">Calendar</span>
             </a>
         </li>
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500 rounded">
                 <i class="ri-draft-line mr-5"></i>
                 <span class="text-sm">Forms</span>
                 <i class="ri-arrow-right-s-line ml-auto group-[.active]:rotate-90"></i>
             </a>
             <ul class="pl-6 items-center text-gray-200 hidden group-[.selected]:block">
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Normal Form</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Form Validation</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Form Layout</span>
                     </a>
@@ -84,20 +84,20 @@
             </ul>
         </li>
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500 rounded">
                 <i class="ri-table-line mr-5"></i>
                 <span class="text-sm">Table</span>
                 <i class="ri-arrow-right-s-line ml-auto group-[.active]:rotate-90"></i>
             </a>
-            <ul class="pl-6 items-center text-gray-200 hidden group-[.selected]:block">
+            <ul class="pl-6 items-center text-white hidden group-[.selected]:block">
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Normal Table</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Pro Table</span>
                     </a>
@@ -105,26 +105,26 @@
             </ul>
         </li>
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500 rounded">
                 <i class="ri-file-list-line mr-5"></i>
                 <span class="text-sm">Pages</span>
                 <i class="ri-arrow-right-s-line ml-auto group-[.active]:rotate-90"></i>
             </a>
-            <ul class="pl-6 items-center text-gray-200 hidden group-[.selected]:block">
+            <ul class="pl-6 items-center text-white hidden group-[.selected]:block">
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Blank Page</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Datatables</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Error Page</span>
                     </a>
@@ -132,26 +132,26 @@
             </ul>
         </li>
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500 rounded">
                 <i class="ri-list-check-2 mr-5"></i>
                 <span class="text-sm">Task</span>
                 <i class="ri-arrow-right-s-line ml-auto group-[.active]:rotate-90"></i>
             </a>
-            <ul class="pl-6 items-center text-gray-200 hidden group-[.selected]:block">
+            <ul class="pl-6 items-center text-white hidden group-[.selected]:block">
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Manage Task</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Active Task</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Pending Task</span>
                     </a>
@@ -160,39 +160,39 @@
         </li>
 
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500 rounded">
                 <i class="ri-discuss-line mr-5"></i>
                 <span class="text-sm">Messages</span>
             </a>
         </li>
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500 rounded">
                 <i class="ri-mail-line mr-5"></i>
                 <span class="text-sm">Inbox</span>
             </a>
         </li>
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500 rounded">
                 <i class="ri-file-list-3-line mr-5"></i>
                 <span class="text-sm">Invoice</span>
             </a>
         </li>
 
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500 rounded">
                 <i class="ri-bubble-chart-line mr-5"></i>
                 <span class="text-sm">Charts</span>
                 <i class="ri-arrow-right-s-line ml-auto group-[.active]:rotate-90"></i>
             </a>
-            <ul class="pl-6 items-center text-gray-200 hidden group-[.selected]:block">
+            <ul class="pl-6 items-center text-white hidden group-[.selected]:block">
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">ChartJS</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">ApexChart</span>
                     </a>
@@ -201,62 +201,50 @@
         </li>
 
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-500 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-500 rounded">
                 <i class="ri-layout-4-line mr-5"></i>
                 <span class="text-sm">UI Elements</span>
                 <i class="ri-arrow-right-s-line ml-auto group-[.active]:rotate-90"></i>
             </a>
-            <ul class="pl-6 items-center text-gray-200 hidden group-[.selected]:block">
+            <ul class="pl-6 items-center text-white hidden group-[.selected]:block">
                 <li class="group pl-2">
-                    <a href="{% url 'alert' %}" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="{% url 'alert' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Alert</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="{% url 'sweetalert' %}" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="{% url 'sweetalert' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Sweetalert</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="{% url 'buttons' %}" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="{% url 'buttons' %}" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-phone-lock-line mr-2"></i>
                         <span class="text-sm">Buttons</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-phone-lock-line mr-2"></i>
                         <span class="text-sm">Card</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
-                        <i class="ri-phone-lock-line mr-2"></i>
-                        <span class="text-sm">Dropdown</span>
-                    </a>
-                </li>
-                <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-phone-lock-line mr-2"></i>
                         <span class="text-sm">Modal</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
-                        <i class="ri-phone-lock-line mr-2"></i>
-                        <span class="text-sm">Notification</span>
-                    </a>
-                </li>
-                <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-phone-lock-line mr-2"></i>
                         <span class="text-sm">Images</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-phone-lock-line mr-2"></i>
                         <span class="text-sm">List</span>
                     </a>
@@ -264,26 +252,26 @@
             </ul>
         </li>
         <li class="group mb-1 sidebar-item">
-            <a href="#" class="flex items-center align-center py-2 px-4 text-gray-200 hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-slate-700 transition ease-out duration-100 rounded">
+            <a href="#" class="flex items-center align-center py-2 px-4 text-white hover:text-gray-100 text-lg hover:bg-gray-500 group-[.active]:text-white group-[.active]:bg-primary transition ease-out duration-100 rounded">
                 <i class="ri-expand-right-line mr-5"></i>
                 <span class="text-sm">Authentication</span>
                 <i class="ri-arrow-right-s-line ml-auto group-[.active]:rotate-90"></i>
             </a>
-            <ul class="pl-6 items-center text-gray-200 hidden group-[.selected]:block">
+            <ul class="pl-6 items-center text-white hidden group-[.selected]:block">
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Login</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-login-box-line mr-2"></i>
                         <span class="text-sm">Register</span>
                     </a>
                 </li>
                 <li class="group pl-2">
-                    <a href="#" class="flex py-2 hover:text-gray-500 text-gray-400">
+                    <a href="#" class="flex py-2 hover:text-gray-500 text-white">
                         <i class="ri-phone-lock-line mr-2"></i>
                         <span class="text-sm">Forgot Password</span>
                     </a>
@@ -291,4 +279,4 @@
             </ul>
         </li>
    </ul>
-</aside>
+</div>

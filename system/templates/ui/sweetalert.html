@@ -15,14 +15,14 @@
         <div class="w-full px-4 py-4 h-auto bg-white rounded">
             <h3 class="text-lg font-semibold text-slate-800 pb-2">Basic Set up</h3>
             <div class="grid grid-cols-2 items-center gap-4">
-                <button type="button" class="px-3 py-3 bg-primary text-white rounded basic">A basic message</button>
-                <button type="button" class="px-3 py-3 bg-primary text-white rounded undertext">A title with a text under</button>
-                <button type="button" class="px-3 py-3 bg-primary text-white rounded modalTitle">Modal with a title & footer</button>
+                <button type="button" class="px-3 py-3 bg-success text-white rounded basic">Basic message</button>
+                <button type="button" class="px-3 py-3 bg-secondary text-white rounded undertext">A title with a text under</button>
+                <button type="button" class="px-3 py-3 bg-info text-white rounded modalTitle">Modal with a title & footer</button>
     
-                <button type="button" class="px-3 py-3 bg-primary text-white rounded htmldesc">Custom HTML description</button>
+                <button type="button" class="px-3 py-3 bg-warning text-white rounded htmldesc">Custom HTML description</button>
                 <button type="button" class="px-3 py-3 bg-primary text-white rounded dialog">Dialog with three buttons</button>
     
-                <button type="button" class="px-3 py-3 bg-primary text-white rounded positioned">Custom positioned dialog</button>
+                <button type="button" class="px-3 py-3 bg-warning text-white rounded positioned">Custom positioned dialog</button>
             </div>
         </div>
         <div class="w-full px-4 py-4 h-auto bg-white rounded">
@@ -41,12 +41,12 @@
         <div class="w-full px-4 py-4 h-auto bg-white rounded">
             <h3 class="text-lg font-semibold text-slate-800 pb-2">SweetAlert Type</h3>
             <div class="grid grid-cols-2 items-center gap-4">
-                <button type="button" class="px-3 py-3 bg-primary text-white rounded success_alert">Success</button>
-                <button type="button" class="px-3 py-3 bg-primary text-white rounded info_alert">Info</button>
+                <button type="button" class="px-3 py-3 bg-success text-white rounded success_alert">Success</button>
+                <button type="button" class="px-3 py-3 bg-info text-white rounded info_alert">Info</button>
                 <button type="button" class="px-3 py-3 bg-primary text-white rounded error_alert">Error</button>
-                <button type="button" class="px-3 py-3 bg-primary text-white rounded warning_alert">Warning</button>
-                <button type="button" class="px-3 py-3 bg-primary text-white rounded question_alert">Question</button>
-                <button type="button" class="px-3 py-3 bg-primary text-white rounded toast_alert">Toast</button>    
+                <button type="button" class="px-3 py-3 bg-warning text-white rounded warning_alert">Warning</button>
+                <button type="button" class="px-3 py-3 bg-secondary text-white rounded question_alert">Question</button>
+                <button type="button" class="px-3 py-3 bg-dark text-white rounded toast_alert">Toast</button>    
             </div>
         </div>
     </div>
@@ -62,7 +62,6 @@
             input: "email",
             inputLabel: "Your email address",
             inputPlaceholder: "Enter your email address",
-            confirmButtonColor: "#F31559",
             confirmButtonText: "Submit",
             timer: 10000,
             timerProgressBar: true,
@@ -76,7 +75,6 @@
         e.preventDefault()
         Swal.fire({
             title: "Basic Sweet Alert",
-            confirmButtonColor: "#F31559",
             confirmButtonText: "Exit Window",
             timer: 5000,
             timerProgressBar: true,
@@ -89,7 +87,6 @@
             title: "The Internet?",
             text: "That thing is still around?",
             icon: "question",
-            confirmButtonColor: "#F31559",
             confirmButtonText: "Exit Window",
             timer: 5000,
             timerProgressBar: true,
@@ -102,7 +99,6 @@
             icon: "error",
             title: "Oops...",
             text: "Something went wrong!",
-            confirmButtonColor: "#F31559",
             confirmButtonText: "Exit Window",
             footer: '<a href="#">Why do I have this issue?</a>',
             timer: 5000,
@@ -130,7 +126,6 @@
             cancelButtonText: `<i class="ri-thumb-down-line"></i>
             `,
             cancelButtonAriaLabel: "Thumbs down",
-            confirmButtonColor: "#F31559",
             timer: 5000,
             timerProgressBar: true,
         });
@@ -145,7 +140,6 @@
             showCancelButton: true,
             confirmButtonText: "Save",
             denyButtonText: `Don't save`,
-            confirmButtonColor: "#F31559",
             timer: 5000,
             timerProgressBar: true,
         }).then((result) => {
@@ -165,7 +159,6 @@
             title: "Your work has been saved",
             showConfirmButton: false,
             timer: 1500,
-            confirmButtonColor: "#F31559",
             timerProgressBar: true,
         });
     });
@@ -181,7 +174,6 @@
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes, delete it!",
             timer: 1500,
-            confirmButtonColor: "#F31559",
             timerProgressBar: true,
         }).then((result) => {
             if (result.isConfirmed) {
@@ -210,7 +202,6 @@
             cancelButtonText: "No, cancel!",
             reverseButtons: true,
             timer: 5000,
-            confirmButtonColor: "#F31559",
             timerProgressBar: true,
         }).then((result) => {
             if (result.isConfirmed) {
@@ -220,8 +211,7 @@
                     icon: "success",
                     showCancelButton: false,
                     showConfirmButton: true,
-                    confirmButtonColor: "#F31559",
-                });
+                        });
             } else if (result.dismiss === Swal.DismissReason.cancel) {
                 Swal.fire({
                     title: "Cancelled",
@@ -229,8 +219,7 @@
                     icon: "error",
                     showCancelButton: false,
                     showConfirmButton: true,
-                    confirmButtonColor: "#F31559",
-                });
+                        });
             }
         });
     });
@@ -246,7 +235,6 @@
             imageHeight: 200,
             imageAlt: "Custom image",
             timer: 5000,
-            confirmButtonColor: "#F31559",
             timerProgressBar: true,
         });
     });
@@ -301,7 +289,6 @@
             title: "Success",
             text: "That thing is still around?",
             icon: "success",
-            confirmButtonColor: "#F31559",
             confirmButtonText: "Exit Window",
             timer: 5000,
             timerProgressBar: true,
@@ -314,7 +301,6 @@
             title: "Info",
             text: "That thing is still around?",
             icon: "info",
-            confirmButtonColor: "#F31559",
             confirmButtonText: "Exit Window",
             timer: 5000,
             timerProgressBar: true,
@@ -328,7 +314,6 @@
             title: "Error",
             text: "That thing is still around?",
             icon: "error",
-            confirmButtonColor: "#F31559",
             confirmButtonText: "Exit Window",
             timer: 5000,
             timerProgressBar: true,
@@ -341,7 +326,6 @@
             title: "Warning",
             text: "That thing is still around?",
             icon: "warning",
-            confirmButtonColor: "#F31559",
             confirmButtonText: "Exit Window",
             timer: 5000,
             timerProgressBar: true,
@@ -354,7 +338,6 @@
             title: "Question",
             text: "That thing is still around?",
             icon: "question",
-            confirmButtonColor: "#F31559",
             confirmButtonText: "Exit Window",
             timer: 5000,
             timerProgressBar: true,

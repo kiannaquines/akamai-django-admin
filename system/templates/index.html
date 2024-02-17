@@ -2,10 +2,10 @@
 {% load static %}
 {% block content %}
     <div class="px-9 w-full h-full mt-9">
-        <h1 class="text-lg pb-3 font-semibold text-slate-800">E-commerce</h1>
+        <h1 class="text-lg pb-3 font-semibold">E-commerce</h1>
         <div class="grid gap-4 mb-3 md:grid-flow-row md:grid-rows-2 lg:grid-flow-col lg:grid-cols-4">
             <div class="flex flex-col bg-white shadow-black/5 px-4 py-4">
-                <a href="#" class="bg-amber-300 rounded-sm h-12 w-12 flex justify-center items-center">
+                <a href="#" class="bg-secondary rounded-sm h-12 w-12 flex justify-center items-center">
                     <i class="bi bi-currency-dollar text-white text-lg"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">$ 500,000</h4>
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="flex flex-col bg-white shadow-black/5 px-4 py-4">
-                <a href="#" class="bg-orange-300 rounded-sm w-12 h-12 flex items-center justify-center">
+                <a href="#" class="bg-primary rounded-sm w-12 h-12 flex items-center justify-center">
                     <i class="bi bi-wallet text-2xl align-middle text-white"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">$ 100,000</h4>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="flex flex-col bg-white shadow-black/5 px-4 py-4">
-                <a href="#" class="bg-red-300 rounded-sm w-12 h-12 flex items-center justify-center">
+                <a href="#" class="bg-dark rounded-sm w-12 h-12 flex items-center justify-center">
                     <i class="bi bi-box-seam text-2xl align-middle text-white"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">$ 70,000</h4>
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="flex flex-col bg-white shadow-black/5 py-4 px-4">
-                <a href="#" class="bg-lime-300 rounded-sm h-12 w-12 flex justify-center items-center">
+                <a href="#" class="bg-danger rounded-sm h-12 w-12 flex justify-center items-center">
                     <i class="bi bi-people text-white text-lg"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">34,000</h4>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="flex flex-col bg-white shadow-black/5 py-4 px-4">
-                <a href="#" class="bg-green-300 rounded-sm h-12 w-12 flex justify-center items-center">
+                <a href="#" class="bg-orange rounded-sm h-12 w-12 flex justify-center items-center">
                     <i class="bi bi-bag-dash text-white text-lg"></i>
                 </a>
                 <h4 class="font-semibold text-2xl pt-5 text-gray-700">10,000</h4>
@@ -126,7 +126,7 @@
         <div class="bg-white w-full h-auto py-4 overflow-x-auto">
             <h1 class="text-lg px-6 py-3 font-semibold text-slate-800">Customer Leads Report</h1>
             <table class="w-full text-sm">
-                <thead class="border-b">
+                <thead class="border border-gray">
                     <tr class="text-sm font-light text-gray-500 capitalize text-left">
                         <th class="px-6 py-3">
                             Customer
@@ -146,7 +146,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="bg-white border-b">
+                    <tr class="bg-white border border-gray">
                         <td class="flex items-center gap-4 px-6 py-3">
                             <img src="{% static 'images/profile/profile1.jpg' %}" class="w-10 h-10 rounded-full" alt="">
                             <div class="flex flex-col items-start">
@@ -164,10 +164,10 @@
                             $1000
                         </td>
                         <td class="px-6 py-3 text-gray-500">
-                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                            <span class="bg-secondary px-2 py-1 text-white rounded-sm">Active</span>
                         </td>
                     </tr>
-                    <tr class="bg-white border-b">
+                    <tr class="bg-white border border-gray">
                         <td class="flex items-center gap-4 px-6 py-3">
                             <img src="{% static 'images/profile/profile2.jpg' %}" class="w-10 h-10 rounded-full" alt="">
                             <div class="flex flex-col items-start">
@@ -185,10 +185,10 @@
                             $1000
                         </td>
                         <td class="px-6 py-3 text-gray-500">
-                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                            <span class="bg-secondary px-2 py-1 text-white rounded-sm">Active</span>
                         </td>
                     </tr>
-                    <tr class="bg-white border-b">
+                    <tr class="bg-white border border-gray">
                         <td class="flex items-center gap-4 px-6 py-3">
                             <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
                             <div class="flex flex-col items-start">
@@ -206,10 +206,10 @@
                             $1000
                         </td>
                         <td class="px-6 py-3">
-                            <span class="bg-primary px-2 py-1 text-white rounded-sm">Inactive</span>
+                            <span class="bg-danger px-2 py-1 text-white rounded-sm">Inactive</span>
                         </td>
                     </tr>
-                    <tr class="bg-white border-b">
+                    <tr class="bg-white border border-gray">
                         <td class="flex items-center gap-4 px-6 py-3">
                             <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
                             <div class="flex flex-col items-start">
@@ -221,10 +221,10 @@
                         <td class="px-6 py-3 text-gray-500">7</td>
                         <td class="px-6 py-3 text-gray-500">$700</td>
                         <td class="px-6 py-3">
-                            <span class="bg-primary px-2 py-1 text-white rounded-sm">Inactive</span>
+                            <span class="bg-danger px-2 py-1 text-white rounded-sm">Inactive</span>
                         </td>
                       </tr>
-                      <tr class="bg-white border-b">
+                      <tr class="bg-white border border-gray">
                         <td class="flex items-center gap-4 px-6 py-3">
                             <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
                             <div class="flex flex-col items-start">
@@ -236,10 +236,10 @@
                         <td class="px-6 py-3 text-gray-500">4</td>
                         <td class="px-6 py-3 text-gray-500">$400</td>
                         <td class="px-6 py-3">
-                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                            <span class="bg-secondary px-2 py-1 text-white rounded-sm">Active</span>
                         </td>
                       </tr>
-                      <tr class="bg-white border-b">
+                      <tr class="bg-white border border-gray">
                         <td class="flex items-center gap-4 px-6 py-3">
                             <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
                             <div class="flex flex-col items-start">
@@ -251,10 +251,10 @@
                         <td class="px-6 py-3 text-gray-500">6</td>
                         <td class="px-6 py-3 text-gray-500">$600</td>
                         <td class="px-6 py-3">
-                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                            <span class="bg-secondary px-2 py-1 text-white rounded-sm">Active</span>
                         </td>
                       </tr>
-                      <tr class="bg-white border-b">
+                      <tr class="bg-white border border-gray">
                         <td class="flex items-center gap-4 px-6 py-3">
                             <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
                             <div class="flex flex-col items-start">
@@ -266,10 +266,10 @@
                         <td class="px-6 py-3 text-gray-500">9</td>
                         <td class="px-6 py-3 text-gray-500">$900</td>
                         <td class="px-6 py-3">
-                            <span class="bg-primary px-2 py-1 text-white rounded-sm inline">Inactive</span>
+                            <span class="bg-danger px-2 py-1 text-white rounded-sm inline">Inactive</span>
                         </td>
                       </tr>
-                      <tr class="bg-white border-b">
+                      <tr class="bg-white border border-gray">
                         <td class="flex items-center gap-4 px-6 py-3">
                             <img src="{% static 'images/profile/profile1.jpg' %}" class="w-10 h-10 rounded-full" alt="">
                             <div class="flex flex-col items-start">
@@ -281,7 +281,7 @@
                         <td class="px-6 py-3 text-gray-500">1</td>
                         <td class="px-6 py-3 text-gray-500">$100</td>
                         <td class="px-6 py-3">
-                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                            <span class="bg-secondary px-2 py-1 text-white rounded-sm">Active</span>
                         </td>
                       </tr>
                       <tr class="bg-white">
@@ -296,7 +296,7 @@
                         <td class="px-6 py-3 text-gray-500">10</td>
                         <td class="px-6 py-3 text-gray-500">$1000</td>
                         <td class="px-6 py-3">
-                            <span class="bg-success px-2 py-1 text-white rounded-sm">Active</span>
+                            <span class="bg-secondary px-2 py-1 text-white rounded-sm">Active</span>
                         </td>
                       </tr>
                 </tbody>
