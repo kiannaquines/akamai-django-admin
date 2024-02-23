@@ -1,0 +1,254 @@
+[
+    { 
+        "employee": "Alice Johnson", 
+        "department": "Sales", 
+        "salary": 60000, 
+        "status": "Regular Employee", 
+        "address": "101 Elm St", 
+        "zipcode": "11111",
+        "start date": "2022-04-05"
+    },
+    { 
+        "employee": "Bob Williams", 
+        "department": "IT", 
+        "salary": 55000, 
+        "status": "Irregular Employee", 
+        "address": "202 Maple Ave", 
+        "zipcode": "22222",
+        "start date": "2022-05-20"
+    },
+    { 
+        "employee": "Charlie Davis", 
+        "department": "Operations", 
+        "salary": 68000, 
+        "status": "Regular Employee", 
+        "address": "303 Oak Dr", 
+        "zipcode": "33333",
+        "start date": "2022-06-15"
+    },
+    { 
+        "employee": "David Brown", 
+        "department": "Marketing", 
+        "salary": 75000, 
+        "status": "Regular Employee", 
+        "address": "404 Pine Blvd", 
+        "zipcode": "44444",
+        "start date": "2022-07-01"
+    },
+    { 
+        "employee": "Eva Miller", 
+        "department": "Finance", 
+        "salary": 67000, 
+        "status": "Irregular Employee", 
+        "address": "505 Cedar Ct", 
+        "zipcode": "55555",
+        "start date": "2022-08-10"
+    },
+    { 
+        "employee": "Frank Wilson", 
+        "department": "Sales", 
+        "salary": 72000, 
+        "status": "Regular Employee", 
+        "address": "606 Birch Ln", 
+        "zipcode": "66666",
+        "start date": "2022-09-25"
+    },
+    { 
+        "employee": "Grace Jackson", 
+        "department": "Human Resources", 
+        "salary": 69000, 
+        "status": "Irregular Employee", 
+        "address": "707 Spruce Rd", 
+        "zipcode": "77777",
+        "start date": "2022-10-05"
+    },
+    { 
+        "employee": "Harry Harris", 
+        "department": "IT", 
+        "salary": 58000, 
+        "status": "Regular Employee", 
+        "address": "808 Willow Dr", 
+        "zipcode": "88888",
+        "start date": "2022-11-20"
+    },
+    { 
+        "employee": "Ivy Turner", 
+        "department": "Operations", 
+        "salary": 71000, 
+        "status": "Irregular Employee", 
+        "address": "909 Pine St", 
+        "zipcode": "99999",
+        "start date": "2022-12-15"
+    },
+    { 
+        "employee": "Jack Robinson", 
+        "department": "Marketing", 
+        "salary": 66000, 
+        "status": "Regular Employee", 
+        "address": "1010 Oak Ave", 
+        "zipcode": "12312",
+        "start date": "2023-01-01"
+    },
+    { 
+        "employee": "Kelly Davis", 
+        "department": "Finance", 
+        "salary": 63000, 
+        "status": "Irregular Employee", 
+        "address": "1111 Maple Ln", 
+        "zipcode": "23423",
+        "start date": "2023-02-10"
+    },
+    { 
+        "employee": "Leo White", 
+        "department": "Sales", 
+        "salary": 59000, 
+        "status": "Regular Employee", 
+        "address": "1212 Elm Blvd", 
+        "zipcode": "34534",
+        "start date": "2023-03-05"
+    },
+    { 
+        "employee": "Mia Martinez", 
+        "department": "Human Resources", 
+        "salary": 70000, 
+        "status": "Irregular Employee", 
+        "address": "1313 Cedar Ct", 
+        "zipcode": "45645",
+        "start date": "2023-04-20"
+    },
+    { 
+        "employee": "Nathan Adams", 
+        "department": "IT", 
+        "salary": 68000, 
+        "status": "Regular Employee", 
+        "address": "1414 Birch Rd", 
+        "zipcode": "56756",
+        "start date": "2023-05-15"
+    },
+    { 
+        "employee": "Olivia Moore", 
+        "department": "Operations", 
+        "salary": 71000, 
+        "status": "Irregular Employee", 
+        "address": "1515 Willow Dr", 
+        "zipcode": "67867",
+        "start date": "2023-06-01"
+    },
+    { 
+        "employee": "Paul Taylor", 
+        "department": "Marketing", 
+        "salary": 64000, 
+        "status": "Regular Employee", 
+        "address": "1616 Pine St", 
+        "zipcode": "78978",
+        "start date": "2023-07-10"
+    },
+    { 
+        "employee": "Quincy Clark", 
+        "department": "Finance", 
+        "salary": 67000, 
+        "status": "Irregular Employee", 
+        "address": "1717 Oak Ave", 
+        "zipcode": "89089",
+        "start date": "2023-08-25"
+    },
+    { 
+        "employee": "Rachel Hill", 
+        "department": "Sales", 
+        "salary": 72000, 
+        "status": "Regular Employee", 
+        "address": "1818 Maple Ln", 
+        "zipcode": "90190",
+        "start date": "2023-09-05"
+    },
+    { 
+        "employee": "Samuel Lee", 
+        "department": "Human Resources", 
+        "salary": 69000, 
+        "status": "Irregular Employee", 
+        "address": "1919 Elm Blvd", 
+        "zipcode": "01201",
+        "start date": "2023-10-20"
+    },
+    { 
+        "employee": "Tracy Turner", 
+        "department": "IT", 
+        "salary": 66000, 
+        "status": "Regular Employee", 
+        "address": "2020 Cedar Ct", 
+        "zipcode": "12312",
+        "start date": "2023-11-15"
+    },
+    { 
+        "employee": "Ulysses Ford", 
+        "department": "Operations", 
+        "salary": 73000, 
+        "status": "Regular Employee", 
+        "address": "2121 Birch Rd", 
+        "zipcode": "23423",
+        "start date": "2023-12-01"
+    },
+    { 
+        "employee": "Victoria Wells", 
+        "department": "Marketing", 
+        "salary": 71000, 
+        "status": "Irregular Employee", 
+        "address": "2222 Willow Dr", 
+        "zipcode": "34534",
+        "start date": "2024-01-10"
+    },
+    { 
+        "employee": "Walter Fisher", 
+        "department": "Finance", 
+        "salary": 67000, 
+        "status": "Regular Employee", 
+        "address": "2323 Pine St", 
+        "zipcode": "45645",
+        "start date": "2024-02-15"
+    },
+    { 
+        "employee": "Xander Reynolds", 
+        "department": "Sales", 
+        "salary": 70000, 
+        "status": "Irregular Employee", 
+        "address": "2424 Oak Ave", 
+        "zipcode": "56756",
+        "start date": "2024-03-05"
+    },
+    { 
+        "employee": "Yvonne Bennett", 
+        "department": "Human Resources", 
+        "salary": 75000, 
+        "status": "Regular Employee", 
+        "address": "2525 Maple Ln", 
+        "zipcode": "67867",
+        "start date": "2024-04-20"
+    },
+    { 
+        "employee": "Zachary Lewis", 
+        "department": "IT", 
+        "salary": 64000, 
+        "status": "Irregular Employee", 
+        "address": "2626 Elm Blvd", 
+        "zipcode": "78978",
+        "start date": "2024-05-15"
+    },
+    { 
+        "employee": "Amy Clark", 
+        "department": "Operations", 
+        "salary": 73000, 
+        "status": "Regular Employee", 
+        "address": "2727 Cedar Ct", 
+        "zipcode": "89089",
+        "start date": "2024-06-01"
+    },
+    { 
+        "employee": "Benjamin White", 
+        "department": "Marketing", 
+        "salary": 68000, 
+        "status": "Irregular Employee", 
+        "address": "2828 Pine St", 
+        "zipcode": "90190",
+        "start date": "2024-07-10"
+    }
+]

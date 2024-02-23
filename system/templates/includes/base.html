@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{% static 'css/akamai.main.css' %}">
     <link rel="stylesheet" href="{% static 'css/akamai.default.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="">
+    {% block css %}{% endblock css %}
 </head>
 <body class="font-nunito scrollbar-track-slate-500 bg-gray">
     {% include './sidebar.html' %}

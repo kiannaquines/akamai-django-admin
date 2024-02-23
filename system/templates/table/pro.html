@@ -1,403 +1,101 @@
 {% extends 'includes/base.html' %}
 {% block subtitle %}Pro Tbale{% endblock subtitle %}
 {% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community@31.0.3/styles/ag-grid.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community@31.0.3/styles/ag-theme-quartz.css" />
+{% endblock css %}
+
 {% block content %}
 <div class="px-9 pt-10 w-full h-full">
     <h1 class="text-lg pb-3 font-semibold text-slate-800">
-        <a href="https://datatables.net/" target="_blank">Pro Table</a>
+        <a href="https://datatables.net/" target="_blank">AG Grid | Pro Table</a>
     </h1>
     <div class="rounded-t-md w-full h-auto pb-4 overflow-x-auto">
-        <table class="w-full text-sm rounded-t-md" id="employeeTable">
-            <thead class="bg-primary rounded-t-md text-white border border-gray">
-                <tr class="text-sm font-light capitalize text-left">
-                    <th class="px-6 py-3">Employee</th>
-                    <th class="px-6 py-3">Department</th>
-                    <th class="px-6 py-3">Position</th>
-                    <th class="px-6 py-3">Address</th>
-                    <th class="px-6 py-3">Salary</th>
-                    <th class="px-6 py-3">Status</th>
-                    <th class="px-6 py-3">Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="odd:bg-white odd:text-dark even:bg-gray">
-                    <td class="flex items-center align-middle gap-4 px-6 py-3" colspan="2">
-                        <img src="{% static 'images/profile/profile1.jpg' %}" class="w-10 h-10 rounded-full" alt="">
-                        <div class="flex flex-col items-start">
-                            <span class="text-dark">Jane C. Doe</span>
-                            <span class="text-xs text-gray-400/75">janecdoe@gmail.com</span>
-                        </div>
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        Engineering
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        Software Developer
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        123 Main St, Cityville, State
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        $100/hr
-                    </td>
-                    <td class="px-6 py-3 whitespace-nowrap">
-                        <span class="bg-primary inline-flex  px-2 py-1 text-white rounded-sm">Regular Employee</span>
-                    </td>
-                    <td class="px-6 py-3 whitespace-nowrap">
-                        <div class="flex items-center justify-center gap-4">
-                            <a href="">
-                                <i class="ri-eye-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-download-2-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="odd:bg-white odd:text-dark even:bg-gray">
-                    <td class="flex items-center gap-4 px-6 py-3">
-                        <img src="{% static 'images/profile/profile2.jpg' %}" class="w-10 h-10 rounded-full" alt="">
-                        <div class="flex flex-col items-start">
-                            <span class="text-gray-500">Larry C. Bird</span>
-                            <span class="text-xs text-gray-400/75">larry@gmail.com</span>
-                        </div>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Engineering
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Software Developer
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        123 Main St, Cityville, State
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        $100/hr
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <span class="bg-primary inline-flex px-2 py-1 text-white rounded-sm">
-                            Regular Employee
-                        </span>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <div class="flex items-center justify-center gap-4">
-                            <a href="">
-                                <i class="ri-eye-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-download-2-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="odd:bg-white odd:text-dark even:bg-gray">
-                    <td class="flex items-center gap-4 px-6 py-3">
-                        <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
-                        <div class="flex flex-col items-start">
-                            <span class="text-dark">Marry C. Doe</span>
-                            <span class="text-xs text-gray-400/75">marry@gmail.com</span>
-                        </div>
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        Engineering
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        Dev Ops
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        123 Main St, Cityville, State
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        $100/hr
-                    </td>
-                    <td class="px-6 py-3 text-dark whitespace-nowrap">
-                        <span class="bg-primary inline-flex px-2 py-1 text-white rounded-sm">Regular Employee</span>
-                    </td>
-                    <td class="px-6 py-3 text-dark whitespace-nowrap">
-                        <div class="flex items-center justify-center gap-4">
-                            <a href="">
-                                <i class="ri-eye-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-download-2-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="odd:bg-white odd:text-dark even:bg-gray">
-                    <td class="flex items-center gap-4 px-6 py-3">
-                        <img src="{% static 'images/profile/profile2.jpg' %}" class="w-10 h-10 rounded-full" alt="">
-                        <div class="flex flex-col items-start">
-                            <span class="text-gray-500">Jane C. Doe</span>
-                            <span class="text-xs text-gray-400/75">janecdoe@gmail.com</span>
-                        </div>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Engineering
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Software Developer
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        123 Main St, Cityville, State
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        $100/hr
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <span class="bg-primary inline-flex px-2 py-1 text-white rounded-sm">Regular Employee</span>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <div class="flex items-center justify-center gap-4">
-                            <a href="">
-                                <i class="ri-eye-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-download-2-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="odd:bg-white odd:text-dark even:bg-gray">
-                    <td class="flex items-center gap-4 px-6 py-3">
-                        <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
-                        <div class="flex flex-col items-start">
-                            <span class="text-gray-500">Jane C. Doe</span>
-                            <span class="text-xs text-gray-400/75">janecdoe@gmail.com</span>
-                        </div>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Engineering
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Software Developer
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        123 Main St, Cityville, State
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        $100/hr
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <span class="bg-danger inline-flex px-2 py-1 text-white rounded-sm">Administrator</span>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <div class="flex items-center justify-center gap-4">
-                            <a href="">
-                                <i class="ri-eye-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-download-2-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="odd:bg-white odd:text-dark even:bg-gray">
-                    <td class="flex items-center gap-4 px-6 py-3">
-                        <img src="{% static 'images/profile/profile1.jpg' %}" class="w-10 h-10 rounded-full" alt="">
-                        <div class="flex flex-col items-start">
-                            <span class="text-gray-500">Jane C. Doe</span>
-                            <span class="text-xs text-gray-400/75">janecdoe@gmail.com</span>
-                        </div>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Marketing
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Marketing Specialist
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        123 Main St, Cityville, State
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        $100/hr
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <span class="bg-primary inline-flex px-2 py-1 text-white rounded-sm">Regular Employee</span>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <div class="flex items-center justify-center gap-4">
-                            <a href="">
-                                <i class="ri-eye-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-download-2-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="odd:bg-white odd:text-dark even:bg-gray">
-                    <td class="flex items-center align-middle gap-4 px-6 py-3" colspan="2">
-                        <img src="{% static 'images/profile/profile1.jpg' %}" class="w-10 h-10 rounded-full" alt="">
-                        <div class="flex flex-col items-start">
-                            <span class="text-dark">Jane C. Doe</span>
-                            <span class="text-xs text-dark-400/75">janecdoe@gmail.com</span>
-                        </div>
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        Engineering
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        Software Developer
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        123 Main St, Cityville, State
-                    </td>
-                    <td class="px-6 py-3 text-dark">
-                        $100/hr
-                    </td>
-                    <td class="px-6 py-3 whitespace-nowrap">
-                        <span class="bg-primary inline-flex  px-2 py-1 text-white rounded-sm">Regular Employee</span>
-                    </td>
-                    <td class="px-6 py-3 whitespace-nowrap">
-                        <div class="flex items-center justify-center gap-4">
-                            <a href="">
-                                <i class="ri-eye-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-download-2-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="odd:bg-white odd:text-dark even:bg-gray">
-                    <td class="flex items-center gap-4 px-6 py-3">
-                        <img src="{% static 'images/profile/profile2.jpg' %}" class="w-10 h-10 rounded-full" alt="">
-                        <div class="flex flex-col items-start">
-                            <span class="text-dark">Larry C. Bird</span>
-                            <span class="text-xs text-gray-400/75">larry@gmail.com</span>
-                        </div>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Engineering
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Software Developer
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        123 Main St, Cityville, State
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        $100/hr
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <span class="bg-primary inline-flex px-2 py-1 text-white rounded-sm">
-                            Regular Employee
-                        </span>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <div class="flex items-center justify-center gap-4">
-                            <a href="">
-                                <i class="ri-eye-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-download-2-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="odd:bg-white odd:text-dark even:bg-gray">
-                    <td class="flex items-center gap-4 px-6 py-3">
-                        <img src="{% static 'images/profile/profile3.jpg' %}" class="w-10 h-10 rounded-full" alt="">
-                        <div class="flex flex-col items-start">
-                            <span class="text-gray-500">Marry C. Doe</span>
-                            <span class="text-xs text-gray-400/75">marry@gmail.com</span>
-                        </div>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Engineering
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Dev Ops
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        123 Main St, Cityville, State
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        $100/hr
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <span class="bg-primary inline-flex px-2 py-1 text-white rounded-sm">Regular Employee</span>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <div class="flex items-center justify-center gap-4">
-                            <a href="">
-                                <i class="ri-eye-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-download-2-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="odd:bg-white odd:text-dark even:bg-gray">
-                    <td class="flex items-center gap-4 px-6 py-3">
-                        <img src="{% static 'images/profile/profile2.jpg' %}" class="w-10 h-10 rounded-full" alt="">
-                        <div class="flex flex-col items-start">
-                            <span class="text-gray-500">Jane C. Doe</span>
-                            <span class="text-xs text-gray-400/75">janecdoe@gmail.com</span>
-                        </div>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Engineering
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        Software Developer
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        123 Main St, Cityville, State
-                    </td>
-                    <td class="px-6 py-3 text-gray-500">
-                        $100/hr
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <span class="bg-primary inline-flex px-2 py-1 text-white rounded-sm">Regular Employee</span>
-                    </td>
-                    <td class="px-6 py-3 text-gray-500 whitespace-nowrap">
-                        <div class="flex items-center justify-center gap-4">
-                            <a href="">
-                                <i class="ri-eye-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-delete-bin-line"></i>
-                            </a>
-                            <a href="">
-                                <i class="ri-download-2-line"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div id="pro1table" class="ag-theme-quartz w-auto" style="height: 800px"></div>
+    </div>
+
+    <div class="rounded-t-md w-full h-auto pb-4 overflow-x-auto">
+        <div id="pro2table" class="ag-theme-quartz w-auto" style="height: 800px"></div>
     </div>
 </div>
 {% endblock content %}
 {% block script %}
+<script src="https://cdn.jsdelivr.net/npm/ag-grid-enterprise@31.0.3/dist/ag-grid-enterprise.min.js"></script>
+<script>
+    function onBtExport() {
+        gridApi.exportDataAsExcel();
+    }
+
+    const colDefs = [
+            { field: "employee", minWidth: 170, checkboxSelection: true, filter: 'agSetColumnFilter'},
+            { field: "department"},
+            { field: "salary"},
+            { field: "status"},
+            { field: "address"},
+            { field: "zipcode"},
+            { field: "start date"},
+    ];
+
+    const gridOptions1 = {
+        rowData: null,
+        columnDefs: colDefs,
+        sideBar: true,
+        suppressMenuHide: true,
+        localeText: {
+            searchOoo: 'Search values...',
+            noMatches: 'No matches could be found.',
+        },
+        defaultColDef: {
+            editable: true,
+            filter: true,
+        },
+        pagination: true,
+        paginationPageSize: 50,
+        rowSelection: 'multiple',
+        suppressRowClickSelection: true,
+        cacheQuickFilter: true,
+        applyMiniFilterWhileTyping: true,
+    };
+
+    const gridOptions2 = {
+        rowData: null,
+        columnDefs: colDefs,
+        sideBar: false,
+        suppressMenuHide: true,
+        localeText: {
+            searchOoo: 'Search values...',
+            noMatches: 'No matches could be found.',
+        },
+        defaultColDef: {
+            editable: true,
+            filter: true,
+        },
+        pagination: true,
+        paginationPageSize: 50,
+        rowSelection: 'multiple',
+        suppressRowClickSelection: true,
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const pro1tablegrid = document.querySelector('#pro1table');
+        const pro2tablegrid = document.querySelector('#pro2table');
+
+        var gridApi1 = agGrid.createGrid(pro1tablegrid, gridOptions1);
+
+        var gridApi2 = agGrid.createGrid(pro2tablegrid, gridOptions2);
+
+        fetch('{% static "js/data.json" %}')
+            .then((response) => response.json())
+            .then((data) => gridApi1.setGridOption('rowData', data)
+        );
+
+        fetch('{% static "js/data.json" %}')
+            .then((response) => response.json())
+            .then((data) => gridApi2.setGridOption('rowData', data)
+        );
+    });
+
+</script>
 {% endblock script %}

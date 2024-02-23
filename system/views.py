@@ -34,6 +34,18 @@ def buttons(request):
     context = {}
     return render(request,"ui/buttons.html",context)
 
+def cards(request):
+    context = {}
+    return render(request,"ui/cards.html",context)
+
+def modals(request):
+    context = {}
+    return render(request,"ui/modal.html",context)
+
+def calendar(request):
+    context = {}
+    return render(request,"calendar.html",context)
+
 def datatable(request):
     context = {}
     return render(request,"pages/datatable.html",context)
@@ -48,7 +60,7 @@ def protable(request):
 
 def blankpage(request):
     context = {}
-    return render(request,"pages/datatable.html",context)
+    return render(request,"pages/blank.html",context)
 
 
 def error404page(request):
